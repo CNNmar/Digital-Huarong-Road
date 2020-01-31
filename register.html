@@ -1,0 +1,123 @@
+<!doctype html>
+
+<head>
+  <style>
+    body{background:url(123.jpg) top left;
+    background-size:100%;}
+    h1 {color:red}
+    h1 {font-size: 30pt;}
+    p {color:rgb(94, 94, 104)}
+    p {font-size: 40pt;}
+    form {font-size: 20pt;}
+    form {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+   
+.btn {
+ width:100px;
+ text-align:center;
+ line-height:100%;
+ padding: 20px 100px;
+ font-size:20px ;
+ font-style:normal;
+ text-decoration:none;
+ margin:5px;
+ vertical-align:text-bottom;
+ zoom:1;
+ outline:none;
+ font-size-adjust:none;
+ font-stretch:normal;
+ border-radius:50px;
+ box-shadow:0px 1px 2px rgba(0,0,0,0.2);
+ text-shadow:0px 1px 1px rgba(0,0,0,0.3);
+ color:#fefee9;
+ border:1px solid #2299ff;
+ background-repeat:repeat;
+ background-size:auto;
+ background-origin:padding-box;
+ background-clip:padding-box;
+ background-color:#3399ff;
+ 
+}
+.rbtn {
+ width:100px;
+ text-align:center;
+ line-height:100%;
+ padding: 20px 100px;
+ font-size:20px ;
+ font-style:normal;
+ text-decoration:none;
+ margin:3px;
+ vertical-align:text-bottom;
+ zoom:1;
+ outline:none;
+ font-size-adjust:none;
+ font-stretch:normal;
+ border-radius:50px;
+ box-shadow:0px 1px 2px rgba(0,0,0,0.2);
+ text-shadow:0px 1px 1px rgba(0,0,0,0.3);
+ color:#fefee9;
+ border:1px solid #e45016;
+ background-repeat:repeat;
+ background-size:auto;
+ background-origin:padding-box;
+ background-clip:padding-box;
+ background-color:#eb260c;
+ 
+}
+
+.btn:hover {
+background: #268DFF;
+}
+.center {
+ margin: auto;
+ width: 35%;  
+}
+</style>
+<meta charset="utf-8">
+<title>Register</title>
+</head>
+<script type="text/javascript">
+function checkpwd(){
+var p1=document.form1.pwd1.value;
+var p2=document.form1.pwd2.value;
+if(p1==""){
+alert("Please input your password!");
+document.form1.pwd1.focus();
+return false;
+}
+if(p1!=p2){
+document.getElementById("msg").innerHTML="Wrong Password! Please input again";//在div显示错误信息
+return false;
+}else{
+  return true
+}
+}
+</script>
+<body>
+  <div class="center">
+<p>
+  Sign-up Form
+</p>
+
+<form name="form1">
+Email：<input type="Email" name="email" /><br />
+Username: <input type="Username" name="username" /><br />
+Password：<input type="password" name="pwd1" /><br />
+Repeat Password：<input type="password" name="pwd2" onchange="checkpwd()" /><!--onchange事件触发检测-->
+<div id="msg" style="color:red;"></div>
+</form>
+<script>
+  function btn1() {
+    alert("Have a good time!");
+    window.location.href = 'HRD success version.html';
+  }
+  </script>
+<script>
+    function btn2() {
+        window.location.href = 'proj.html';
+}
+</script>
+  <button class="rbtn" onclick="btn2()">Cancel</button>
+  <button class="btn" onclick="btn1()">Register</button>
+</div>
+</body>
+</html>

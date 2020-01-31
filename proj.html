@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        body{background:url(123.jpg) top left;
+        background-size:100%;}
+        h1 {color:red}
+        h1 {font-size: 30pt;}
+        p {color:rgb(94, 94, 104)}
+        p {font-size: 20pt;}
+       
+    .btn {
+     width:100px;
+     text-align:center;
+     line-height:100%;
+     padding: 20px 100px;
+     font-size:20px ;
+     font-style:normal;
+     text-decoration:none;
+     margin:5px;
+     vertical-align:text-bottom;
+     zoom:1;
+     outline:none;
+     font-size-adjust:none;
+     font-stretch:normal;
+     border-radius:50px;
+     box-shadow:0px 1px 2px rgba(0,0,0,0.2);
+     text-shadow:0px 1px 1px rgba(0,0,0,0.3);
+     color:#fefee9;
+     border:1px solid #2299ff;
+     background-repeat:repeat;
+     background-size:auto;
+     background-origin:padding-box;
+     background-clip:padding-box;
+     background-color:#3399ff;
+     
+}
+.rbtn {
+     width:100px;
+     text-align:center;
+     line-height:100%;
+     padding: 20px 100px;
+     font-size:20px ;
+     font-style:normal;
+     text-decoration:none;
+     margin:3px;
+     vertical-align:text-bottom;
+     zoom:1;
+     outline:none;
+     font-size-adjust:none;
+     font-stretch:normal;
+     border-radius:50px;
+     box-shadow:0px 1px 2px rgba(0,0,0,0.2);
+     text-shadow:0px 1px 1px rgba(0,0,0,0.3);
+     color:#fefee9;
+     border:1px solid #e45016;
+     background-repeat:repeat;
+     background-size:auto;
+     background-origin:padding-box;
+     background-clip:padding-box;
+     background-color:#eb260c;
+     
+}
+ 
+    .btn:hover {
+    background: #268DFF;
+}
+    .center {
+     margin: auto;
+     width: 35%;  
+}
+
+    </style>
+<meta charset="utf-8">
+<title>Log_in</title>
+
+</head>
+<body>
+    <div class="center">
+   
+      <h1>
+      HUA RONG DAO
+      </h1>
+      <h1>
+      Have a Try!
+      </h1>  
+      <p>
+      用户名(Username)：<input type="text" name="username" size="35"/>
+      </p>
+      <p>
+
+      密   码(Password): <input type="password" value="" id="myInput" size="35"><br><br>
+        <input type="checkbox" onclick="passwd()">Show Password
+      </p>
+      <script>
+        function passwd() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>  
+    <script>
+        function btn1() {
+          alert("Have a good time!");
+          window.location.href = 'HRD success version.html';
+        }
+        </script>
+    <script>
+        function btn2() {
+            window.location.href = 'register.html';
+    }
+    </script>
+      <button class="btn" onclick="btn1()">Log_in</button>
+      <button class="rbtn" onclick="btn2()">Register</button>
+        
+ 
+    </div>
+    </body>
+</html>
